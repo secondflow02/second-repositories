@@ -1,0 +1,25 @@
+<!-- **LV2.** **예약번호 확인 하기**
+
+1. 예약 고객 리스트는 js로 이미 import 되어 console.log에 찍어두었습니다.
+2. 고객 리스트에 없는 고객정보의 경우 일치하는 항목이 없습니다라는 console.log와 함께 텍스트가 나타납니다.
+3. 이름과 핸드폰 번호 모두 일치하지 않으면 고객은 검색할 수 없습니다.
+4. 고객데이터가 있으면 고객번호가 텍스트로 나타납니다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="./level2.js"></script>
+    <title>예약 고객 확인하기</title>
+  </head>
+  <body>
+    <form>
+      <p>이름: <input name="user-name" /></p>
+      <p>연락처: <input name="user-phone" maxlength="13" /></p>
+      <button>예약번호 확인</button>
+    </form>
+    <p id="reservation-number"></p>
+  </body>
+</html>

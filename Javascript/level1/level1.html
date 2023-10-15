@@ -1,0 +1,35 @@
+<!-- **LV1.** **계좌 번호 파싱 하기**
+
+1. 계좌번호 양식과 은행명은 import 되어 js에 console.log에 찍어두었습니다.
+2. 은행을 드롭 박스로 선택할 수 있게 해야하며 양식에 맞추어 계좌번호 12자리를 파싱하면 됩니다. 
+
+       단, 앞 2자리와 맨끝 2자리를 제외하면 모두 ********로 나타나야합니다.
+
+1. 어떠한 경우에도 HTML 하드 코딩이 되서는 안되며 계좌번호 12자리가 되지 않는다면 alert를 띄워야합니다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="./level.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="account-send-form">
+      <p>
+        은행선택:
+        <select id="bank-selector"></select>
+      </p>
+      <p>
+        계좌입력:
+        <input id="account-input" maxlength="12" />
+      </p>
+      <button>제출</button>
+    </form>
+    <ul id="account-list">
+      <li>성용은행 : 12-********-34</li>
+    </ul>
+  </body>
+</html>
