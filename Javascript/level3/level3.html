@@ -1,0 +1,50 @@
+<!-- **LV3. 레시피 추가 및 삭제 하기**
+
+1. 레시피는 각각 재료와 무게를 입력하면 아래 테이블에 데이터가 추가됩니다.
+2. 같은 이름의 재료는 추가할 수 없습니다.
+3. 각각의 재료는 삭제버튼이 존재하며 삭제를 누르면 테이블에서 데이터가 삭제됩니다.
+4. 제출 버튼을 누르면 현재 테이블에 나와있는 데이터가 key: value와 같은 형태로 재료:무게로 나타납니다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="./level3.js"></script>
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 1px solid #999;
+      }
+
+      table th,
+      td {
+        text-align: center;
+        border: 1px solid #999;
+      }
+
+      table .thead > th {
+        width: 150px;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="ingredient-form">
+      <p>재료명: <input name="ingredient" /></p>
+      <p>용량: <input name="weight" /></p>
+      <button>추가</button>
+    </form>
+    <table>
+      <tr class="thead">
+        <th>재료</th>
+        <th>무게</th>
+        <th>관리</th>
+      </tr>
+    </table>
+    <button id="submit_button" type="button">제출</button>
+    <ul id="ingredient-list"></ul>
+  </body>
+</html>
